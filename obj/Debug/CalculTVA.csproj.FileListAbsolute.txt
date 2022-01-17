@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.Form1.resources
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.Properties.Resources.resources
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.csproj.GenerateResource.cache
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\dev\c#\CalculTVA\bin\Debug\CalculTVA.exe.config
+C:\Users\admin\Documents\dev\c#\CalculTVA\bin\Debug\CalculTVA.exe
+C:\Users\admin\Documents\dev\c#\CalculTVA\bin\Debug\CalculTVA.pdb
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.exe
+C:\Users\admin\Documents\dev\c#\CalculTVA\obj\Debug\CalculTVA.pdb
