@@ -73,14 +73,14 @@ namespace CalculTVA
         {
             if (rb_htva.Checked == true)
             {
-                tva_calc();
+                Tva_calc();
             } else
             {
-                htva_calc();
+                Htva_calc();
             }
         }
 
-        public void tva_calc()
+        public void Tva_calc()
         {
             double prixhtva = Convert.ToDouble(tb_htva.Text);
             double tauxtva = 0;
@@ -141,10 +141,18 @@ namespace CalculTVA
                 prixtva = prixhtva + prixhtva * 0.03;
                 tauxtva = prixhtva * 0.03;
             }
-            MessageBox.Show("Le prix TVAC est de " + prixtva + " € et le montant de tva appliqué est de " + tauxtva + " €", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            if (prixtva > 0 && tauxtva > 0)
+            {
+                MessageBox.Show("Le prix TVAC est de " + Math.Round(prixtva, 2) + " € et le montant de tva appliqué est de " + Math.Round(tauxtva, 2) + " €", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez choisir un taux de TVA !", "ATTENTION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        public void htva_calc()
+        public void Htva_calc()
         {
             double prixHT = 0;
             double prixTVAC = Convert.ToDouble(tb_tvac.Text);
@@ -193,7 +201,15 @@ namespace CalculTVA
             {
                 prixHT = prixTVAC / 1.03;
             }
-            MessageBox.Show("Le prix HTVA est de " + prixHT + " €", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (prixHT > 0)
+            {
+                MessageBox.Show("Le prix HTVA est de " + Math.Round(prixHT, 2) + " €", "Résultat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez choisir un taux de TVA !", "ATTENTION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
     }
